@@ -1,0 +1,54 @@
+1.3.1.1
+	Adoption by LGG	
+	Added build scripts
+	Added AssemblyVersion.tt 
+	Added Changelog
+	Added ReadMe
+
+1.3.1
+	Changed regex for true/false handling to be case insensitive.
+
+1.3.0
+	Math parsing now caches results so that duplicate formulas do not need to be parsed repeatedly.
+	Version is stored as the file version on the assembly now.
+
+1.2.5
+	Version bumped for KSP 1.3, but otherwise unchanged. Should still work in 1.2.2 as well.
+
+1.2.4
+	Allows the use of "seq" and "sneq" in if statements for simple string comparisons
+	Allow "ln" and "log" for natural log and log base 10, instead of just "l" and "L"
+	Replace occurrences of "true" and "false" with "1" and "0" in math parsing
+	Added some additional exception handling around math parsing
+
+1.2.1
+	BREAKING: Math Parsing now requires an "identifier" string formula and fires an event that
+		allows other mods to add their own variables without a hard dependency. Example identifier
+		from KCT: "KCT_BUILD_RATE". The identifier allows mods to filter which formulas to apply 
+		variables to. Change only breaks mods that use math parsing (pretty much just KCT, which 
+		wasn't updated to 1.2.2 officially and the beta already uses this version)
+	Uses KSPs values for the length of a year, day, hour, and minute so as to support any weird times that might get set by planet modifying mods.
+
+1.1.3
+	Just a version bump for KSP 1.2.2
+
+1.1.1
+	Update to KSP 1.1.2
+	Slight rework of license location and name
+	Code basically identical to 1.1.0
+
+1.1.0
+	Updated for KSP 1.1.1.
+	Added math parsing functionality from KCT
+	Added basic if statements: "if(VALUE1 == VALUE2 ? RESULT1 : RESULT2)"
+	Supported comparators: <, >, <=, >=, ==, !=
+	Added time parsing functionality from KCT
+	Added several utility functions
+	Added .version file so CKAN can get KSP info and version info easier
+
+1.0.1
+	Changed license to MIT and compiled against KSP 1.0.5. Otherwise zero changes. Hopefully CKAN catches this and it makes DQ and SS update.
+
+1.0.0
+	Initial MagiCore release with StringTranslation abilities for shared string replacement in SensibleScreenshots and Dated QuickSaves.
+
