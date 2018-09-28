@@ -75,7 +75,7 @@ namespace MagiCore
             str = ReplaceToken(str, "save", HighLogic.SaveFolder != null && HighLogic.SaveFolder.Trim().Length > 0 ? HighLogic.SaveFolder : "NA");
             str = ReplaceToken(str, "version", Versioning.GetVersionString());
             str = ReplaceToken(str, "vessel", HighLogic.LoadedSceneIsFlight && FlightGlobals.ActiveVessel != null ? FlightGlobals.ActiveVessel.vesselName : "NA");
-            str = ReplaceToken(str, "body", Planetarium.fetch != null ? Planetarium.fetch.CurrentMainBody.bodyName : "NA");
+            str = ReplaceToken(str, "body", Planetarium.fetch != null ? Planetarium.fetch.CurrentMainBody.GetDisplayName() : "NA");
             str = ReplaceToken(str, "situation", HighLogic.LoadedSceneIsFlight && FlightGlobals.ActiveVessel != null ? FlightGlobals.ActiveVessel.situation.ToString() : "NA");
             str = ReplaceToken(str, "biome", HighLogic.LoadedSceneIsFlight && FlightGlobals.ActiveVessel != null ? ScienceUtil.GetExperimentBiome(FlightGlobals.ActiveVessel.mainBody, FlightGlobals.ActiveVessel.latitude, FlightGlobals.ActiveVessel.longitude) : "NA");
 
