@@ -1,6 +1,6 @@
 {
     "NAME":"MagiCore",
-    "URL":"https://raw.githubusercontent.com/linuxgurugamer/MagiCore/master/MagiCore.version",
+    "URL":"http://ksp.spacetux.net/avc/MagiCore",
     "GITHUB":
     {
         "USERNAME":"linuxgurugamer",
@@ -12,7 +12,7 @@
         "MAJOR":1,
         "MINOR":3,
         "PATCH":1,
-        "BUILD":2
+        "BUILD":3
     },
     "KSP_VERSION_MIN":
 	{
@@ -23,7 +23,7 @@
     "KSP_VERSION_MAX":
 	{
         "MAJOR":1,
-        "MINOR":4,
-        "PATCH":8
+        "MINOR":5,
+        "PATCH":9
      }
 }
