@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using KSP.Localization;
 
 namespace MagiCore
 {
@@ -35,7 +36,7 @@ namespace MagiCore
                     replaced = ReplaceToken(replaced, kvp.Key, kvp.Value); //ReplaceToken is a function that replaces [X] with the value (regardless of case or if it's wrapped with [] or <>)
                 }
             }
-
+            replaced = Localizer.Format("<<1>>", replaced);
             return replaced;
         }
 
@@ -59,7 +60,7 @@ namespace MagiCore
                 sourceString = newStr;
                 lwrString = sourceString.ToLower();
             }
-
+         
             return sourceString;
         }
 
