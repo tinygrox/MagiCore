@@ -38,7 +38,7 @@ namespace MagiCore
             int[] ret = { 0, 0, 0, 0, 0 };
             ret[0] = (int)Math.Floor(time / (KSPUtil.dateTimeFormatter.Year)) + 1; //year
             time %= (KSPUtil.dateTimeFormatter.Year);
-            ret[1] = (int)Math.Floor(time / KSPUtil.dateTimeFormatter.Day) + 1; //days
+            ret[1] = (int)Math.Floor(time / (KSPUtil.dateTimeFormatter.Day)) + 1; //days
             time %= (KSPUtil.dateTimeFormatter.Day);
             ret[2] = (int)Math.Floor(time / (KSPUtil.dateTimeFormatter.Hour)); //hours
             time %= (KSPUtil.dateTimeFormatter.Hour);
