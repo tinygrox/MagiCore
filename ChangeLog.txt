@@ -1,5 +1,9 @@
 ChangeLog
 
+1.3.2.5
+	Thanks to github user @al2me6 for this:
+		This uses KSP's built-in machinery to format the in-game date, the chief use-case being the ability to use the real (IRL) date in RSS when	RSSDateTimeFormatter is installed.
+
 1.3.2.4
 	Added AssemblyFileVersion
 	Updated version file for 1.12
