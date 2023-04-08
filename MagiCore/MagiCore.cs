@@ -63,25 +63,25 @@ namespace MagiCore
                 StringBuilder formatedTime = new StringBuilder();
                 t = Math.Floor(time / KSPUtil.dateTimeFormatter.Day);
                 if (!skipZeroes || t > 0)
-                    formatedTime.AppendFormat("{0,2:0} days ", t);
+                    formatedTime.AppendFormat("{0,2:0} 天 ", t); // days
                 time = time % KSPUtil.dateTimeFormatter.Day;
-                t = Math.Floor(time / KSPUtil.dateTimeFormatter.Hour);
+                t = Math.Floor(time / KSPUtil.dateTimeFormatter.Hour); // 
                 if (!skipZeroes || t > 0)
-                    formatedTime.AppendFormat("{0,2:0} hours ", t);
+                    formatedTime.AppendFormat("{0,2:0} 时 ", t); // hours
                 time = time % KSPUtil.dateTimeFormatter.Hour;
                 t = Math.Floor(time / KSPUtil.dateTimeFormatter.Minute);
                 if (!skipZeroes || t > 0)
-                    formatedTime.AppendFormat("{0,2:0} minutes ", t);
+                    formatedTime.AppendFormat("{0,2:0} 分 ", t); // minutes
                 time = time % KSPUtil.dateTimeFormatter.Minute;
 
                 if (!skipZeroes || time > 0)
-                    formatedTime.AppendFormat("{0,2:0} seconds", time);
+                    formatedTime.AppendFormat("{0,2:0} 秒", time); // seconds
 
                 return formatedTime.ToString();
             }
             else
             {
-                return "0 days,  0 hours,  0 minutes,  0 seconds";
+                return "0 天,  0 时,  0 分,  0 秒"; // dayshoursminutesseconds
             }
 
         }
